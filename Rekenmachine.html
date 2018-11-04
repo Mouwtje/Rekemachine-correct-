@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ichnichtweißennicht</title>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<div style="display:flex;justify-content:center;align-items:center;">
+   <div>
+   <body>
+      <form name="calculator">
+         <!-- deze command maakt een tabel aan-->
+         <table class="input">
+            <!-- hier wordt de eerste rij gemaakt-->
+            <tr>
+               <!--dit stukje code maakt een display scherm-->
+               <td colspan="8">
+                  <input class="output2" type="text" name="display" id="display" enabled>
+               </td>
+               </table>
+         <table class="knoppies">
+            </tr>
+            <!--deze 3 blokjes van drie regels code maken de buttons aan. het "onclick" command zegt dat wanneer je de button aanklikt, 
+            een waarde toevoegt aan de waarde van de display screen-->
+            <tr>
+               <td><input class="knopc" type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+               <td><input class="knopc" type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+               <td><input class="knopc" type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+               <!--de laatste regel code voegt bij onclick geen waarde toe, maar zorgt ervoor dat er wordt opgeteld-->
+               <td><input class="knopb" type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input class="knopc" type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+               <td><input class="knopc" type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+               <td><input class="knopc" type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+               <!-- deze code voegt ook geen waarde toe, maar zorgt dat het kan aftrekken-->
+               <td><input class="knopb" type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input class="knopc" type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+               <td><input class="knopc" type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+               <td><input class="knopc" type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+               <!-- ook deze code voegt geen waarde toe, maar zorgt ervoor dat er vermenigvuldigd wordt-->
+               <td><input class="knopb" type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+            </tr>
+            <tr>
+               <!-- deze regel code cleart het inputveld-->
+               <td><input class="knopk" type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+               <td><input class="knopc" type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <!-- deze regel code zorgt ervoor dat er met een komma gerekent kan worden-->
+               <td><input class="knopk" type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+               <!-- deze regel code deelt je getallen door elkaar-->
+               <td><input class="knopb" type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+            </tr>
+            </table>
+            <table class="modulo">
+            <tr>
+            <td><input id="procent" class="knopb" type="button" class="operator" name"modulo" value="%" onclick="calculator.display.value += '%'"></td>
+            </div></div>
+         </tr>
+         </table>
+         </div></div>
+         </div>
+      </form>
+   </body>
+</html>
