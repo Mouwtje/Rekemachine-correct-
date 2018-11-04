@@ -1,0 +1,59 @@
+.output2 {
+    display: block;
+    outline: dashed;
+    outline-color: #ffff00;
+    background-color: #b300b3;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+}
+
+.knopc{
+    outline-color: #000;
+    background-color: #7070db;
+    color: #fff;
+    font-size: 30px;
+}
+
+.input{
+    background-image: url(lightning.jpg);
+    background-size: cover;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+body{
+    background-image: url(bos2.png);
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.knoppies{
+    padding-left: 200px;
+}
+
+.knopb{
+    outline-color: #000;
+    background-color: #66ff66;
+    color: #fff;
+    font-size: 30px;
+}
+
+.knopk{
+   outline-color: #000;
+    background-color: #e6005c;
+    color: #fff;
+    font-size: 30px; 
+}
+
+.modulo {
+    padding-left: 200px;
+}
+
+#procent {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
+}
+
